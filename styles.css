@@ -35,8 +35,8 @@ button#theme-toggle {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background-color: #268bd2; /* Добавлен фоновый цвет */
-    color: #fdf6e3; /* Добавлен цвет текста */
+    background-color: #042e39; 
+    color: #fdf6e3; 
     border: none;
     border-radius: 5px;
     padding: 5px 10px;
@@ -48,7 +48,7 @@ main {
 }
 
 h2 {
-    background-color: #268bd2; /* Изменено на Solarized Blue */
+    background-color: #042e39; 
     color: #fdf6e3;
     padding: 0.5rem;
     border-radius: 5px;
@@ -63,7 +63,7 @@ ul {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #268bd2; /* Изменено на Solarized Blue */
+    background-color: #042e39; 
     color: #fdf6e3;
 }
 
@@ -82,17 +82,21 @@ header img {
 }
 
 .dark-mode header {
-    background-color: #073642;
+    background-color: #01171d;
     color: #93a1a1;
 }
 
+.dark-mode h1 {
+    color: #586e75; 
+}
+
 .dark-mode h2 {
-    background-color: #073642;
+    background-color: #01171d;
     color: #93a1a1;
 }
 
 .dark-mode footer {
-    background-color: #073642;
+    background-color: #01171d;
     color: #93a1a1;
 }
 
@@ -108,7 +112,7 @@ header img {
     }
     
     h2.light-mode {
-        background-color: #268bd2;
+        background-color: #042e39;
         color: #fdf6e3;
     }
     
