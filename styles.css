@@ -2,18 +2,45 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5e9d0; 
+    background-color: #fdf6e3; 
+    color: #002b36; 
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+    background-color: #fdf6e3; 
+    color: #002b36;
+}
+
+.dark-mode {
+    background-color: #002b36; 
+    color: #eee8d5; 
 }
 
 header {
-    background-color: #f39c12; 
-    color: #fff;
+    background-color: #eee8d5; 
+    color: #002b36;
     text-align: center;
     padding: 1rem;
+    position: relative;
 }
 
 h1 {
     margin: 0;
+    user-select: none;
+    display: inline;
+}
+
+button#theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #268bd2; /* Добавлен фоновый цвет */
+    color: #fdf6e3; /* Добавлен цвет текста */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
 }
 
 main {
@@ -21,8 +48,8 @@ main {
 }
 
 h2 {
-    background-color: #f39c12; 
-    color: #000; 
+    background-color: #268bd2; /* Изменено на Solarized Blue */
+    color: #fdf6e3;
     padding: 0.5rem;
     border-radius: 5px;
     margin-top: 0;
@@ -36,17 +63,59 @@ ul {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #f39c12; 
-    color: #fff;
+    background-color: #268bd2; /* Изменено на Solarized Blue */
+    color: #fdf6e3;
 }
 
-
 header img {
-    width: 75px; 
-    height: auto; 
+    width: 75px;
+    height: auto;
     position: absolute;
     top: 1rem;
     left: 1rem;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
+
+.dark-mode {
+    background-color: #002b36;
+    color: #eee8d5;
+}
+
+.dark-mode header {
+    background-color: #073642;
+    color: #93a1a1;
+}
+
+.dark-mode h2 {
+    background-color: #073642;
+    color: #93a1a1;
+}
+
+.dark-mode footer {
+    background-color: #073642;
+    color: #93a1a1;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.light-mode {
+        background-color: #073642;
+        color: #93a1a1;
+    }
+    
+    header.light-mode {
+        background-color: #002b36;
+        color: #eee8d5;
+    }
+    
+    h2.light-mode {
+        background-color: #268bd2;
+        color: #fdf6e3;
+    }
+    
+    footer.light-mode {
+        background-color: #002b36;
+        color: #eee8d5;
+    }
+}
+
 
