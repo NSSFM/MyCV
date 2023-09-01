@@ -100,6 +100,15 @@ header img {
     color: #93a1a1;
 }
 
+.contact-info {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
 @media (prefers-color-scheme: dark) {
     body.light-mode {
         background-color: #073642;
@@ -121,5 +130,3 @@ header img {
         color: #eee8d5;
     }
 }
-
-
